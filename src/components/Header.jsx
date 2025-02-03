@@ -83,7 +83,7 @@ const Header = () => {
         </ul>
       )}
     </div>
-    <FontAwesomeIcon icon="fa-thin fa-heart" />
+    {/* <FontAwesomeIcon icon="fa-thin fa-heart" /> */}
           <div className="log-reg-but">
             {/* <img src={user} alt="" class="user" /> */}
             <button>Login / Register</button>

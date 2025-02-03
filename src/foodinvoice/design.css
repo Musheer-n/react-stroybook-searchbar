@@ -1,0 +1,136 @@
+.right-sidebar {
+    width: 220px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 35px;
+    font-family: sans-serif;
+  }
+  .burger-section {
+    margin-top: 10px;
+  }
+  
+  .invoice {
+    margin-bottom: 20px;
+  }
+  
+  .invoice .invoice-heading h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(22, 22, 22);
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .variety-burger {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .variety-burger img {
+    height: 55px;
+    margin-right: 10px;
+    width: 70px;
+    border-radius: 10px;
+  }
+  .variety-burger .burger-heading span {
+    font-size: 11px;
+    color: orangered;
+  }
+  .variety-burger .burger-heading h2 {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  .payment {
+    margin-top: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.777);
+    border-style: dashed;
+    background-color: rgba(128, 128, 128, 0.073);
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    
+  }
+  .tot-payment {
+    font-size: 11px;
+    font-weight: normal;
+    color: rgb(76, 74, 74);
+  }
+  .tot-payment .total-payment {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 17px;
+    color: rgb(31, 30, 30);
+  }
+  
+  .payment-summary {
+    margin-bottom: 4px;
+    font-size: 11px;
+    font-weight: normal;
+    color: rgb(106, 100, 100);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.229);
+    padding-bottom: 6px;
+  }
+  
+  .payment-summary h2 {
+    font-size: 11px;
+    font-weight: normal;
+    color: rgb(106, 100, 100);
+  }
+  .sub-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 7px;
+  }
+  
+  .payment-summary span {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .payment-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .payment-method {
+    padding-bottom: 4px;
+  }
+  
+  .payment-logo .row-1,
+  .payment-logo .row-2 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 3px;
+  }
+  
+  .payment-logo img {
+    height: 55px;
+    width: 90px;
+    border: none;
+    background-color: white;
+  }
+  
+  .order-now button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(252, 91, 33);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .place-order button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(252, 91, 33);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 25px;
+ }
