@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { Minus, Plus, Trash2 } from 'lucide-react';
+// import { Minus, Plus, Trash2 } from 'lucide-react';
+import './sty2.css'
+import './style.css'
 
 export const Layout=()=>{
-
+    const [cuscount,setcuscounnt]=useState(0);
        
     const [orderItems, setOrderItems] = useState([
         {
@@ -10,7 +12,7 @@ export const Layout=()=>{
           name: 'Japanese Chicken Gyoza',
           price: 81700,
           quantity: 2,
-          image: 'https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&q=80&w=200'
+          image: 'https://th.bing.com/th/id/OIP.qCI5d0NR1CYqiWD5-53crAHaE1?w=247&h=180&c=7&pcl=1b1a19&r=0&o=5&dpr=1.1&pid=1.7'
         },
         {
           id: 2,
@@ -39,6 +41,7 @@ export const Layout=()=>{
         { label: "Discount sales", value: -120000 },
         { label: "Total tax", value: 40000 },
       ]);
+      
     
       // Calculate total dynamically
       const total = paymentDetails.reduce((acc, item) => acc + item.value, 0);    
@@ -68,10 +71,31 @@ export const Layout=()=>{
             <div className="sub1">
                 <h3>Customer Information <span>i</span></h3>
                 <div className="customerinf1">
-                    {/* <p>Customer name</p> */}
-                    {/* <b>Emir Abiyyu</b> */}
+                <p>Customer name</p>
+                <b>Emir Abiyyu</b> 
+
                 </div>
-                <div className="customerinf2"></div>
+                <div className="customerinf2">
+                <div className="detail"><p>Number of persons</p>
+                <b>12 Person Table</b></div>
+                <div className="detailinf">
+                  <div className="quantity-controls">
+              <button 
+                className="quantity-btn"
+                onClick={() =>setcuscounnt(cuscount-1)}
+              >
+                {/* <Minus size={16} /> */}
+              </button>
+              <span>{cuscount}</span>
+              <button 
+                className="quantity-btn"
+                onClick={() => setcuscounnt(cuscount+1)}
+              >
+                {/* <Plus size={16} /> */}
+              </button>
+            </div>
+                </div>
+                </div>
                 
             </div>
             {/* <div className="sub2"> */}
@@ -101,14 +125,14 @@ export const Layout=()=>{
                 className="quantity-btn"
                 onClick={() => updateQuantity(item.id, false)}
               >
-                <Minus size={16} />
+                {/* <Minus size={16} /> */}
               </button>
               <span>{item.quantity}</span>
               <button 
                 className="quantity-btn"
                 onClick={() => updateQuantity(item.id, true)}
               >
-                <Plus size={16} />
+                {/* <Plus size={16} /> */}
               </button>
             </div>
             
@@ -116,7 +140,7 @@ export const Layout=()=>{
               className="delete-btn"
               onClick={() => removeItem(item.id)}
             >
-              <Trash2 size={20} />
+              {/* <Trash2 size={20} /> */}
             </button>
             </div>
           </div>

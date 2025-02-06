@@ -1,8 +1,8 @@
-import React from "react";
-import { Layout } from "./resto";
+import React from 'react'
+import { Layout } from './resto'
 
-export default{
-    title:'Kansresto/resto',
+export default{ 
+    title:'Kanresto/resto',
     component:Layout,
 }
 

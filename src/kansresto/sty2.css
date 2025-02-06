@@ -1,9 +1,9 @@
 .order-container {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 1000px;
     height: 70vh;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     /* margin-left: 10px; */
     border-radius: 10px;
     padding: 20px;
@@ -52,6 +52,7 @@
     padding: 16px;
     margin-bottom: 12px;
     border-radius: 12px;
+    flex-wrap: wrap;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   }
   
@@ -84,6 +85,8 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    flex: auto;
+    /* background-color: #2eb82e; */
   }
   .qd{
     display: flex;

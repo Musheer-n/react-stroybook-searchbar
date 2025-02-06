@@ -18,7 +18,7 @@ body{
 /*header*/
 .header{
     background-color: white;
-    flex:0.1;
+    flex:1;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
@@ -75,16 +75,43 @@ input[type='text']::placeholder{
 .customerinf1{
     background-color: rgb(237, 237, 237);
     border-radius: 10px;
-    flex: 0.4 ;
+    flex: 1 ;
     margin-left: 10px;
-    /* opacity: 40%; */
+    display: flex;
+    flex-direction: column;
+   padding-left: 5px;
+   padding-bottom: 12px;
+    
   }
+  .customerinf1 p{
+    color: rgb(167, 174, 180);
+    margin-bottom: 0;
+  }
+  
   .customerinf2{
+    padding-left: 5px;
+    padding-bottom: 12px;
     background-color: rgb(237, 237, 237);
     border-radius: 10px;
     flex: 0.4 ;
     margin-left: 10px;
-    /* opacity: 40%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .customerinf2 .quantity-btn{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+  }
+  .customerinf2 .quantity-controls{
+    padding-right: 5px;
+  }
+  .customerinf2 p{
+    color: rgb(167, 174, 180);
+    margin-bottom: 0;
   }
 .sub1 h3{
   margin-bottom: 0;
@@ -101,6 +128,9 @@ h3{
     background-color: rgb(237, 237, 237);
     border-radius: 10px;
     flex: 1;
+    margin: 0 auto;
+    padding: 20px;
+
 } */
 .sub3{
     /* background-color: aquamarine; */
