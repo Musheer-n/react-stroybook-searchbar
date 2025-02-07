@@ -1,9 +1,12 @@
+import CategoryGrid from "./just";
 import React from "react";
-import {Deal} from "./just";
 
 export default {
   title: "justdeal/just",
-  component: Deal,
-}
+  component: CategoryGrid,
+};
 
-export const Default = () =><Deal />;
+const Template = (args) => <CategoryGrid {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {};

@@ -1,45 +1,34 @@
-.deal-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    font-family: sans-serif;
-  }
-  
-  .deal-card {
-    width: 120px;
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-    border-color: rgb(159, 45, 45) ;
-  }
-  
-  .deal-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .deal-icon {
-    font-size: 30px;
-  }
-  
-  .deal-image {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 5px;
-  }
-  
-  .deal-text {
-    margin-top: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #333;
-  }
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.category {
+  flex: 1;
+  min-width: 250px;
+}
+
+.category h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.category-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.category-item {
+  text-align: center;
+}
+
+.category-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border-color: black;
+}

@@ -125,7 +125,7 @@ export const Layout=()=>{
                 className="quantity-btn"
                 onClick={() => updateQuantity(item.id, false)}
               >
-                {/* <Minus size={16} /> */}
+                {/* <Minus size={50} /> */}
               </button>
               <span>{item.quantity}</span>
               <button 

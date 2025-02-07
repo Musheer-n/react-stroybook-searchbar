@@ -1,44 +1,59 @@
-import React from "react";
 import "./style23.css";
+import React from "react";
 
 const categories = [
-  { name: "Restaurants", icon: "🍽" },
-  { name: "Hotels", icon: "🏨" },
-  { name: "Beauty Spa", icon: "💆‍♀" },
-  { name: "Home Decor", icon: "🛋" },
-  { name: "Wedding Planning", icon: "💍", image: "wedding.jpg" },
-  { name: "Education", icon: "🎓" },
-  { name: "Rent & Hire", icon: "🔧" },
-  { name: "Hospitals", icon: "🏥" },
-  { name: "Contractors", icon: "👷‍♂" },
-  { name: "Pet Shops", icon: "🏠" },
-  { name: "PG/Hostels", icon: "🛏" },
-  { name: "Estate Agent", icon: "👨‍💼" },
-  { name: "Dentists", icon: "🦷" },
-  { name: "Gym", icon: "🏋" },
-  { name: "Loans", icon: "💰" },
-  { name: "Event Organisers", icon: "🎉" },
-  { name: "Driving Schools", icon: "🚗" },
-  { name: "Packers & Movers", icon: "📦" },
-  { name: "Courier Service", icon: "📬" },
-  { name: "Popular Categories", icon: "📊" },
+  {
+    title: "Wedding Requisites",
+    items: [
+      { name: "Banquet Halls", img: "path/to/banquet.jpg" },
+      { name: "Bridal Requisite", img: "path/to/bridal.jpg" },
+      { name: "Caterers", img: "path/to/caterers.jpg" },
+    ],
+  },
+  {
+    title: "Beauty & Spa",
+    items: [
+      { name: "Beauty Parlours", img: "path/to/beauty.jpg" },
+      { name: "Spa & Massages", img: "path/to/spa.jpg" },
+      { name: "Salons", img: "path/to/salons.jpg" },
+    ],
+  },
+  {
+    title: "Repairs & Services",
+    items: [
+      { name: "AC Service", img: "path/to/ac.jpg" },
+      { name: "Car Service", img: "path/to/car.jpg" },
+      { name: "Bike Service", img: "path/to/bike.jpg" },
+    ],
+  },
+  {
+    title: "Daily Needs",
+    items: [
+      { name: "Movies", img: "path/to/movies.jpg" },
+      { name: "Grocery", img: "path/to/grocery.jpg" },
+      { name: "Electricians", img: "path/to/electrician.jpg" },
+    ],
+  },
 ];
 
-const Deal = () => {
+const CategoryGrid = () => {
   return (
-    <div className="deal-container">
+    <div className="category-grid">
       {categories.map((category, index) => (
-        <div key={index} className="deal-card">
-          {category.image ? (
-            <img src={category.image} alt={category.name} className="deal-image" />
-          ) : (
-            <span className="deal-icon">{category.icon}</span>
-          )}
-          <p className="deal-text">{category.name}</p>
+        <div key={index} className="category">
+          <h2>{category.title}</h2>
+          <div className="category-items">
+            {category.items.map((item, i) => (
+              <div key={i} className="category-item">
+                <img src={item.img} alt={item.name} className="category-image" />
+                <p>{item.name}</p>
+              </div>
+            ))}
+          </div>
         </div>
       ))}
     </div>
   );
 };
 
-export default Deal;
+export default CategoryGrid;
