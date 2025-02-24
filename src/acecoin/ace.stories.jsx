@@ -1,9 +1,9 @@
 import React from 'react'
-import { MemoriedCardDetails } from './CardDetails'
+import { MemoriedCardDisplay } from './CardDisplay'
 
 export default{ 
     title:'acecoin/CardDetails',
-    component:MemoriedCardDetails,
+    component:MemoriedCardDisplay,
 }
 
-export const Default=()=><MemoriedCardDetails/>
+export const Default=()=><MemoriedCardDisplay/>
